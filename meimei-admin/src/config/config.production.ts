@@ -16,10 +16,10 @@ export default defineConfig({
   // typeorm 配置
   database: {
     type: 'mysql',
-    host: process.env.MYSQL_HOST || 'localhost',
-    port: process.env.MYSQL_PORT || 3306,
+    host: process.env.MYSQL_HOST || '175.178.101.11',
+    port: process.env.MYSQL_PORT || 46680,
     username: process.env.MYSQL_USERNAME || 'root',
-    password: process.env.MYSQL_PASSWORD || 'admin',
+    password: process.env.MYSQL_PASSWORD || 'test?win1',
     database: process.env.MYSQL_DATABASE || 'mei-mei',
     autoLoadModels: true,
     synchronize: true,
@@ -28,15 +28,15 @@ export default defineConfig({
   // redis 配置
   redis: {
     config: {
-      url: 'redis://:123456@localhost:6379/0'
+      url: 'redis://:e0fef205a5a44886a50e56693395cd7f@apn1-bold-sunbeam-33484.upstash.io:33484'
     }
   },
 
   // 队列reids 配置
   bullRedis: {
-    host: 'localhost',
-    port: '6379',
-    password: '123456'
+    host: 'apn1-bold-sunbeam-33484.upstash.io',
+    port: '33484',
+    password: 'e0fef205a5a44886a50e56693395cd7f'
   },
 
   isDemoEnvironment: false,
